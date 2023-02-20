@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Subscriptions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Email</th>
+      <th>Subcribed</th>
+      <th>Topics</th>
+      <th>Frequency</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @subscriptions.each do |subscription| %>
+      <tr>
+        <td><%= subscription.id %></td>
+        <td><%= subscription.first_name %></td>
+        <td><%= subscription.last_name %></td>
+        <td><%= subscription.email %></td>
+        <td><%= subscription.subcribed %></td>
+        <td><%= subscription.topics %></td>
+        <td><%= subscription.frequency %></td>
+        <td><%= link_to 'Show', subscription %></td>
+        <td><%= link_to 'Edit', edit_subscription_path(subscription) %></td>
+        <td><%= link_to 'Destroy', subscription, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Subscription', new_subscription_path %>
