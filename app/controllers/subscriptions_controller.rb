@@ -83,7 +83,7 @@ class SubscriptionsController < ApplicationController
       :first_name,
       :last_name,
       :email,
-      :subcribed,
+      :subscribed,
       :topics,
     )
   end

@@ -48,4 +48,4 @@ s3 =
     ],
   )
 
-puts "#{Subscription.count} users created."
+puts "#{Subscription.count} subscriptions created."
