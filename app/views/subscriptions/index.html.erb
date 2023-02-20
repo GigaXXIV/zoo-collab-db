@@ -9,9 +9,8 @@
       <th>First name</th>
       <th>Last name</th>
       <th>Email</th>
-      <th>Subcribed</th>
+      <th>Subscribed</th>
       <th>Topics</th>
-      <th>Frequency</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -23,9 +22,8 @@
         <td><%= subscription.first_name %></td>
         <td><%= subscription.last_name %></td>
         <td><%= subscription.email %></td>
-        <td><%= subscription.subcribed %></td>
+        <td><%= subscription.subscribed %></td>
         <td><%= subscription.topics %></td>
-        <td><%= subscription.frequency %></td>
         <td><%= link_to 'Show', subscription %></td>
         <td><%= link_to 'Edit', edit_subscription_path(subscription) %></td>
         <td><%= link_to 'Destroy', subscription, method: :delete, data: { confirm: 'Are you sure?' } %></td>
