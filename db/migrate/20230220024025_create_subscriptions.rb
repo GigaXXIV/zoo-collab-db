@@ -4,7 +4,7 @@ class CreateSubscriptions < ActiveRecord::Migration[5.2]
       t.text :first_name
       t.text :last_name
       t.text :email
-      t.boolean :subscribed
+      t.boolean :subscribed, default: true
       t.string :topics, array: true
 
       t.timestamps

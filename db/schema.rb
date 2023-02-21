@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2023_02_20_024025) do
     t.text "last_name"
     t.text "email"
     t.boolean "subscribed"
-    t.string "topics", array: true
+    t.string "topics"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

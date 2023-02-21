@@ -1,5 +1,7 @@
 {
   "name": "zoo-collab-db",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@chakra-ui/react": "^2.5.1"
+  }
 }
